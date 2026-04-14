@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "resolution_week4_suvamhere"
+version = "0.0.1"
+dependencies = [ "fastapi[standard]" ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/resolution_week4_suvamhere"]
+
+[project.scripts]
+todo-api = "resolution_week3_suvamhere.main:main"
